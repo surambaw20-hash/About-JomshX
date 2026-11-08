@@ -171,25 +171,10 @@ h1, h2, h3, p { margin-top: 0; }
 .section-heading h2, .about-copy h2, .contact-section h2 { margin-bottom: 0; font-size: clamp(35px, 4vw, 49px); font-weight: 800; letter-spacing: -0.06em; line-height: 1.1; }
 .section-intro { max-width: 295px; margin-bottom: 5px; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px 22px; }
-.project-art { position: relative; display: block; min-height: 250px; overflow: hidden; isolation: isolate; background: #101419; }
-.project-image, .project-overlay { position: absolute; inset: 0; width: 100%; height: 100%; }
-.project-image { z-index: -2; padding: 14px; object-fit: contain; transition: transform 700ms cubic-bezier(.2,.7,.2,1), filter 500ms ease; }
-.project-overlay { z-index: -1; background: linear-gradient(90deg, rgba(5, 14, 19, .48), rgba(5, 14, 19, .08) 80%), linear-gradient(0deg, rgba(5, 14, 19, .35), transparent 42%); transition: background 350ms ease; }
-.project-art:hover .project-image, .project-art:focus-visible .project-image { transform: scale(1.07); filter: saturate(1.15); }
-.project-art:hover .project-overlay, .project-art:focus-visible .project-overlay { background: linear-gradient(90deg, rgba(5, 14, 19, .68), rgba(5, 14, 19, .1) 88%), linear-gradient(0deg, rgba(5, 14, 19, .55), transparent 62%); }
+.project-art { position: relative; display: block; aspect-ratio: 1; overflow: hidden; background: transparent; }
+.project-image { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform 550ms cubic-bezier(.2,.7,.2,1); }
+.project-art:hover .project-image, .project-art:focus-visible .project-image { transform: scale(1.045); }
 .project-art:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.art-index, .art-caption, .project-type, .motion-word, .orb-word, .art-arrow { position: absolute; }
-.art-index { top: 20px; left: 22px; color: rgba(255,255,255,.7); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .14em; }
-.project-title-overlay { position: absolute; top: 50%; left: 8%; color: #f3eee4; font-size: clamp(32px, 4vw, 56px); font-weight: 800; letter-spacing: -.07em; transform: translateY(-42%); transition: transform 300ms ease; }
-.project-hover-caption { display: block; max-width: 230px; margin-top: 10px; color: rgba(255,255,255,.78); font-size: 10px; font-weight: 600; letter-spacing: .1em; line-height: 1.6; opacity: 0; transform: translateY(8px); transition: opacity 250ms ease, transform 250ms ease; text-transform: uppercase; }
-.project-art:hover .project-title-overlay, .project-art:focus-visible .project-title-overlay { transform: translateY(-55%); }
-.project-art:hover .project-hover-caption, .project-art:focus-visible .project-hover-caption { opacity: 1; transform: translateY(0); }
-.art-arrow { right: 19px; bottom: 16px; display: grid; width: 31px; height: 31px; place-items: center; border: 1px solid rgba(255,255,255,.42); border-radius: 50%; color: white; transition: color 180ms ease, background 180ms ease; }
-.project-art:hover .art-arrow { background: white; color: #141a1d; }
-.project-meta { display: flex; align-items: center; justify-content: space-between; padding-top: 15px; }
-.project-meta h3 { margin-bottom: 4px; font-size: 13px; font-weight: 700; }
-.project-meta p { margin: 0; color: var(--muted); font-size: 10px; }
-.project-year { color: var(--muted); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .1em; }
 .work-footnote { margin: 36px 0 0; color: var(--muted); font-family: "DM Mono", monospace; font-size: 9px; letter-spacing: .08em; text-align: center; }
 
 .about-section { display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: 11%; padding-block: 80px 105px; border-top: 1px solid var(--line); }
@@ -272,8 +257,6 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
   .hero-note { margin-top: 38px; }
   .project-grid { grid-template-columns: 1fr; gap: 28px; }
-  .project-art { min-height: 235px; }
-  .project-year { font-size: 7px; }
   .section-heading h2, .about-copy h2, .contact-section h2 { font-size: 36px; }
   .site-footer { flex-wrap: wrap; padding-block: 18px; }
 }
