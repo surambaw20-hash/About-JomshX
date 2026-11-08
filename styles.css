@@ -282,7 +282,7 @@ h1, h2, h3, p { margin-top: 0; }
   .section-wrap, .site-header { width: calc(100% - 36px); }
   .brand { width: 96px; }
   .hero { padding-top: 70px; }
-  .hero-geometry { right: -23%; width: 230px; opacity: .1; }
+  .hero-geometry { right: 0; width: 220px; opacity: .1; }
   .hero-description { font-size: 13px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
   .hero-note { margin-top: 38px; }
