@@ -65,7 +65,7 @@ button { font: inherit; }
 ::selection { color: #071014; background: var(--accent); }
 
 .page-glow {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   right: -200px;
@@ -77,7 +77,7 @@ button { font: inherit; }
 }
 
 .section-wrap, .site-header {
-  width: min(1120px, calc(100% - 64px));
+  width: min(1280px, calc(100% - 64px));
   margin-inline: auto;
 }
 
@@ -123,7 +123,7 @@ button { font: inherit; }
 .hero {
   position: relative;
   display: grid;
-  min-height: 660px;
+  min-height: clamp(520px, calc(100vh - 230px), 660px);
   align-items: center;
   grid-template-columns: 1fr 0.92fr;
   padding-block: 70px 95px;
@@ -257,6 +257,12 @@ h1, h2, h3, p { margin-top: 0; }
   .about-mark { min-height: 250px; }
   .about-monogram { font-size: 95px; }
   .contact-section { min-height: 330px; }
+}
+
+@media (min-width: 761px) and (max-height: 820px) {
+  .hero { padding-block: 48px 70px; }
+  .hero-art { width: min(100%, 400px); }
+  .hero-note { margin-top: 44px; }
 }
 
 @media (max-width: 520px) {
