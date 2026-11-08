@@ -85,7 +85,7 @@ button { font: inherit; }
 .brand-accent { color: var(--accent); }
 .navigation { display: flex; align-items: center; gap: 39px; margin-left: auto; margin-right: 35px; }
 .navigation a, .text-link { color: var(--muted); font-size: 12px; font-weight: 600; transition: color 180ms ease; }
-.navigation a:hover, .text-link:hover { color: var(--accent); }
+.navigation a:hover, .navigation a[aria-current="page"], .text-link:hover { color: var(--accent); }
 
 .menu-toggle { display: none; }
 
@@ -122,7 +122,7 @@ h1, h2, h3, p { margin-top: 0; }
 .work-section { padding-block: 60px 75px; border-top: 1px solid var(--line); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; max-width: 980px; margin: 0 auto 26px; }
 .section-heading .eyebrow, .about-copy .eyebrow, .contact-section .eyebrow { margin-bottom: 14px; }
-.section-heading h2, .about-copy h2, .contact-section h2 { margin-bottom: 0; font-size: clamp(35px, 4vw, 49px); font-weight: 800; letter-spacing: -0.06em; line-height: 1.1; }
+.section-heading h1, .section-heading h2, .about-copy h1, .about-copy h2 { margin-bottom: 0; font-size: clamp(35px, 4vw, 49px); font-weight: 800; letter-spacing: -0.06em; line-height: 1.1; }
 .section-intro { max-width: 295px; margin-bottom: 5px; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .project-grid { display: grid; max-width: 980px; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-inline: auto; }
 .project-art { position: relative; display: block; aspect-ratio: 1; overflow: hidden; background: transparent; }
@@ -144,7 +144,7 @@ h1, h2, h3, p { margin-top: 0; }
 .interest-list span { padding: 8px 11px; border: 1px solid var(--line); border-radius: 2px; color: var(--muted); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .04em; }
 
 .contact-section { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: 9%; padding-block: 62px 68px; border-top: 1px solid var(--line); }
-.contact-copy h2 { max-width: 440px; margin-bottom: 16px; font-size: clamp(36px, 4vw, 52px); font-weight: 800; letter-spacing: -.06em; line-height: 1.08; }
+.contact-copy h1, .contact-copy h2 { max-width: 440px; margin-bottom: 16px; font-size: clamp(36px, 4vw, 52px); font-weight: 800; letter-spacing: -.06em; line-height: 1.08; }
 .contact-copy > p { max-width: 420px; margin-bottom: 26px; color: var(--muted); font-size: 12px; line-height: 1.9; }
 .contact-links { display: grid; gap: 12px; }
 .contact-links a, .contact-email { display: flex; min-height: 72px; align-items: center; gap: 15px; padding: 13px 17px; border: 1px solid var(--line); border-radius: 8px; background: rgba(17, 21, 27, .58); transition: border-color 180ms ease, background 180ms ease, transform 180ms ease; }
@@ -215,7 +215,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
   .hero-note { margin-top: 38px; }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .section-heading h2, .about-copy h2, .contact-section h2 { font-size: 36px; }
+  .section-heading h1, .section-heading h2, .about-copy h1, .about-copy h2, .contact-copy h1, .contact-copy h2 { font-size: 36px; }
   .site-footer { flex-wrap: wrap; padding-block: 18px; }
 }
 
