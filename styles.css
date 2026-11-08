@@ -264,6 +264,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero { padding-block: 48px 70px; }
   .hero-art { width: min(100%, 400px); }
   .hero-note { margin-top: 44px; }
+  .scroll-cue { right: 0; left: auto; }
 }
 
 @media (max-width: 520px) {
