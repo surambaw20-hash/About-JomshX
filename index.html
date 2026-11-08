@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b0f" />
+    <meta
+      name="description"
+      content="JomshX — a creative portfolio for visual experiments, color, and motion."
+    />
+    <title>JomshX — Visual playground</title>
+    <link rel="icon" type="image/png" href="./JomshX.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="JomshX home">
+        <img src="./JomshX.png" alt="" />
+        <span>JOMSH<span class="brand-accent">X</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="primary-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch theme">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.6A8.8 8.8 0 0 1 8.4 3.8 8.8 8.8 0 1 0 20.2 15.6Z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> A little corner of the internet</p>
+          <h1>Ideas in<br /><span class="text-gradient">full color.</span></h1>
+          <p class="hero-description">
+            Exploring the space between bold visuals, thoughtful edits, and the little details that make a frame feel alive.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              Explore my work
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-5-5 5 5-5 5"></path></svg>
+            </a>
+            <a class="text-link" href="#about">A bit about me <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <span>Curiosity first. Always.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="JomshX creative identity artwork">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="art-center">
+            <img src="./JomshX.png" alt="JomshX" />
+          </div>
+          <span class="orbit-label label-top">COLOR / MOTION</span>
+          <span class="orbit-label label-bottom">MADE WITH INTENTION</span>
+          <span class="spark spark-one" aria-hidden="true">✳</span>
+          <span class="spark spark-two" aria-hidden="true">✦</span>
+        </div>
+        <a class="scroll-cue" href="#work"><span></span> Scroll to explore</a>
+      </section>
+
+      <section class="work-section section-wrap" id="work">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">A few things in progress</p>
+            <h2>Selected <span class="text-gradient">explorations.</span></h2>
+          </div>
+          <p class="section-intro">A playground for experimenting with mood, color, and visual rhythm.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-wide reveal">
+            <a class="project-art project-art-one" href="#contact" aria-label="Discuss a color study">
+              <span class="art-index">01 / COLOR STUDY</span>
+              <span class="project-type">AFTER<br />HOURS</span>
+              <span class="art-caption">A study in atmosphere</span>
+              <span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta">
+              <div><h3>After Hours</h3><p>Color &amp; atmosphere</p></div>
+              <span class="project-year">VISUAL STUDY</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-art project-art-two" href="#contact" aria-label="Discuss a motion study">
+              <span class="art-index">02 / MOTION STUDY</span>
+              <span class="motion-shape" aria-hidden="true"></span>
+              <span class="motion-word">FLOW<span>.</span></span>
+              <span class="art-caption">Motion in the margins</span>
+              <span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta">
+              <div><h3>In Motion</h3><p>Form &amp; movement</p></div>
+              <span class="project-year">VISUAL STUDY</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-art project-art-three" href="#contact" aria-label="Discuss a visual experiment">
+              <span class="art-index">03 / VISUAL EXPERIMENT</span>
+              <span class="chrome-orb" aria-hidden="true"></span>
+              <span class="orb-word">OTHER<br />WORLDS</span>
+              <span class="art-caption">A different point of view</span>
+              <span class="art-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta">
+              <div><h3>Other Worlds</h3><p>Light &amp; composition</p></div>
+              <span class="project-year">VISUAL STUDY</span>
+            </div>
+          </article>
+        </div>
+        <p class="work-footnote reveal">Independent experiments — more stories soon.</p>
+      </section>
+
+      <section class="about-section section-wrap" id="about">
+        <div class="about-mark reveal">
+          <div class="about-monogram">J<span>X</span></div>
+          <span class="about-caption">STAY<br />CURIOUS</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">A little about me</p>
+          <h2>Making things<br />feel <span class="text-gradient">like something.</span></h2>
+          <p>
+            I’m JomshX. I’m drawn to the way color shifts a mood, how a well-timed cut changes a story, and how small details can bring an idea to life.
+          </p>
+          <p>
+            This is my space to explore, experiment, and share what I’m making along the way.
+          </p>
+          <div class="interest-list" aria-label="Creative interests">
+            <span>Color</span><span>Editing</span><span>Visual storytelling</span><span>Experimentation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap reveal" id="contact">
+        <p class="eyebrow">Have an idea in mind?</p>
+        <h2>Let’s make it <span class="text-gradient">stand out.</span></h2>
+        <p>Have a project, a question, or just want to say hi? I’d love to hear from you.</p>
+        <a class="button button-primary" href="mailto:?subject=Hello%20JomshX">
+          Say hello
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-5-5 5 5-5 5"></path></svg>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="footer-brand" href="#home">JOMSH<span class="brand-accent">X</span></a>
+      <span>Made with curiosity <span class="footer-heart" aria-label="love">♥</span></span>
+      <span>© <span id="current-year"></span> JomshX</span>
+    </footer>
+  </body>
+</html>
