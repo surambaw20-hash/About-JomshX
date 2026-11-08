@@ -119,6 +119,17 @@ h1, h2, h3, p { margin-top: 0; }
 .scroll-cue span { position: relative; width: 1px; height: 28px; overflow: hidden; background: var(--line); }
 .scroll-cue span::after { position: absolute; width: 1px; height: 12px; background: var(--accent); content: ""; animation: scroll-line 1.7s ease-in-out infinite; }
 
+.trusted-section { padding-block: 58px 72px; border-top: 1px solid var(--line); }
+.trusted-heading { max-width: 620px; margin: 0 auto 34px; text-align: center; }
+.trusted-heading h2 { margin-bottom: 10px; font-size: clamp(30px, 3.5vw, 40px); font-weight: 800; letter-spacing: -.06em; }
+.trusted-heading p { margin-bottom: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.trusted-grid { display: grid; max-width: 1080px; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px 18px; margin-inline: auto; }
+.trusted-partner { display: flex; min-width: 0; min-height: 112px; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--muted); text-align: center; transition: color 180ms ease, transform 180ms ease; }
+.trusted-partner:hover { transform: translateY(-3px); color: var(--text); }
+.trusted-partner img { display: block; width: 68px; height: 68px; object-fit: contain; filter: grayscale(.72); opacity: .7; transition: filter 180ms ease, opacity 180ms ease; }
+.trusted-partner:hover img { filter: grayscale(0); opacity: 1; }
+.trusted-partner span { font-size: 10px; line-height: 1.45; }
+
 .work-section { padding-block: 60px 75px; border-top: 1px solid var(--line); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; max-width: 980px; margin: 0 auto 26px; }
 .section-heading .eyebrow, .about-copy .eyebrow, .contact-section .eyebrow { margin-bottom: 14px; }
@@ -185,6 +196,11 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-description { max-width: 350px; }
   .hero-note { margin-top: 48px; }
   .scroll-cue { bottom: 30px; }
+  .trusted-section { padding-block: 48px 56px; }
+  .trusted-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 10px; }
+  .trusted-partner { min-height: 100px; gap: 8px; }
+  .trusted-partner img { width: 60px; height: 60px; }
+  .trusted-partner span { font-size: 9px; }
   .work-section { padding-block: 52px 65px; }
   .section-heading { align-items: start; flex-direction: column; gap: 13px; }
   .section-intro { max-width: 400px; }
